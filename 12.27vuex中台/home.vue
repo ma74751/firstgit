@@ -94,8 +94,9 @@ export default{
     ]),
     handleEdit (index, row) {
       console.log(index, row)
+      let row1 = {...row}
       this.$children[0].$children[5].$children[1].dialogFormVisible = true
-      this.$children[0].$children[5].$children[1].form = row
+      this.$children[0].$children[5].$children[1].form = row1
       this.$children[0].$children[5].$children[1].titleTrue = false
       this.$children[0].$children[5].$children[1].ind = index + (this.currpage - 1) * this.pagesize
     },

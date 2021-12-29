@@ -69,6 +69,7 @@ export default{
       'changeData'
     ]),
     cancle () {
+      console.log('调用cancle')
       this.dialogFormVisible = false
       this.form = {
         name: '',
@@ -81,7 +82,7 @@ export default{
       }, 200)
     },
     enter () {
-      console.log(this.form.birthday)
+      console.log('触发enter')
       if (this.titleTrue) {
         this.addData(this.form)
       } else {
